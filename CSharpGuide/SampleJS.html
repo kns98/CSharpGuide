@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<body>
+    <h1>JavaScript and TypeScript Examples</h1>
+
+    <p>1. Result of "5" + 2 + 3 using var:</p>
+    <p id="demoVar"></p>
+
+    <p>2. Result of "5" + 2 + 3 using let:</p>
+    <p id="demoLet"></p>
+
+    <p>3. Result of comparison 5 == "5":</p>
+    <p id="demoComparison"></p>
+
+    <script>
+        // var example
+        var x = "5" + 2 + 3; // x will be the string "523" because "5" is a string
+        document.getElementById("demoVar").innerHTML = x;
+
+        // let example
+        {
+            let y = "5" + 2 + 3; // y is only accessible within this block
+            document.getElementById("demoLet").innerHTML = y;
+        }
+
+        // comparison example
+        let compareValue = 5 == "5"; // true, because == only compares values, not types
+        document.getElementById("demoComparison").innerHTML = compareValue;
+
+    </script>
+
+    <!-- TypeScript example for demonstrating type safety (this won't run as normal JavaScript, need TypeScript compiler) -->
+    <script type="text/typescript">
+        let z: number = 5 + 2 + 3; // this is how we can define a type in TypeScript
+        // let errorVar: number = "5" + 2 + 3; // Uncommenting this line will result in a TypeScript error because "5" is a string
+    </script>
+</body>
+</html>

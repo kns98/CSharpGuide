@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample Form with jQuery UI</title>
+
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Include jQuery UI library -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script>
+        $(function() {
+            $("input[type='date'], input[type='month'], input[type='week'], input[type='datetime-local']").datepicker();
+            $("input[type='button'], input[type='submit'], input[type='reset']").button();
+            $("input[type='range']").slider();
+        });
+    </script>
+</head>
+<body>
+
+<form name="SignIn" method="post" action="signin.php" >
+
+    <label for="Email">Email:</label>
+    <input type="email" name="email" id="Email" /><br>
+
+    <label for="Password">Password:</label>
+    <input type="password" name="password" id="Password" /><br>
+
+    <label for="Color">Color:</label>
+    <input type="color" name="color" id="Color" /><br>
+
+    <label for="DOB">Date of Birth:</label>
+    <input type="date" name="dob" id="DOB" /><br>
+
+    <label for="File">Upload File:</label>
+    <input type="file" name="file" id="File" /><br>
+
+    <label for="Number">Number:</label>
+    <input type="number" name="number" id="Number" min="0" max="100" /><br>
+
+    <label for="Range">Range:</label>
+    <input type="range" name="range" id="Range" min="0" max="100" /><br>
+
+    <label for="Tel">Telephone:</label>
+    <input type="tel" name="tel" id="Tel" /><br>
+
+    <label for="URL">Website:</label>
+    <input type="url" name="url" id="URL" /><br>
+
+    <input type="hidden" name="hidden" value="secret" />
+
+    <input type="checkbox" name="checkbox" id="Checkbox" />
+    <label for="Checkbox">I agree to the Terms and Conditions</label><br>
+
+    <input type="radio" name="radio" id="Radio1" value="1" />
+    <label for="Radio1">Option 1</label>
+    <input type="radio" name="radio" id="Radio2" value="2" />
+    <label for="Radio2">Option 2</label><br>
+
+    <input type="submit" value="Submit" />
+    <input type="reset" value="Reset" />
+    <input type="button" value="Button" />
+
+</form>
+
+</body>
+</html>

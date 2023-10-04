@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Features</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <style>
+        .highlight {
+            background-color: #f8d7da;
+            border-radius: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Key Features of Bootstrap</h1>
+
+        <!-- Responsive Grid System -->
+        <div class="row">
+            <div class="col-sm-6 highlight">
+                <h2>Responsive Grid System</h2>
+                <p>Bootstrap’s grid system lets you design layouts for various screen sizes.</p>
+            </div>
+            <div class="col-sm-6 highlight">
+                <h2>Components & JS Plugins</h2>
+                <!-- Button and Modal Component -->
+                <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Show Modal</button>
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Bootstrap Modal</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                Modals are part of Bootstrap's JS Plugins!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Typography & Icons -->
+        <div class="highlight mt-4">
+            <h2 class="mb-4">Typography & Icons</h2>
+            <p><i class="fas fa-check"></i> Icons from Font Awesome integrated with Bootstrap.</p>
+        </div>
+
+        <!-- Responsive Media -->
+        <div class="highlight mt-4">
+            <h2>Responsive Images & Media</h2>
+            <img src="https://via.placeholder.com/300x150" alt="Placeholder Image" class="img-fluid">
+        </div>
+
+        <!-- Utility Classes -->
+        <div class="text-right mt-4 highlight">
+            <h2>Utility Classes</h2>
+            <p>Utility classes for text alignment, margin, and more!</p>
+        </div>
+
+        <footer class="text-center mt-5">
+            Bootstrap ensures <strong>cross-browser compatibility</strong>.
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

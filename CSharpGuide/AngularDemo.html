@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>AngularJS Single Page App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="app" ng-controller="TableController as ctrl">
+
+    <h1>Dummy Data Table</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>UserId</th>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Completed</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in ctrl.data">
+                <td>{{ item.userId }}</td>
+                <td>{{ item.id }}</td>
+                <td>{{ item.title }}</td>
+                <td>{{ item.completed }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        angular.module('app', [])
+            .controller('TableController', function() {
+                this.data = [
+                    { userId: 1, id: 1, title: 'Task 1', completed: false },
+                    { userId: 1, id: 2, title: 'Task 2', completed: true },
+                    // ... add more data as needed
+                ];
+            });
+    </script>
+
+</body>
+</html>
