@@ -5,7 +5,7 @@ namespace CSharpGuide
 {
     internal class StringManipulation
     {
-        static void Main()
+        static void Main_()
         {
             // 1. **String Splitting**
             var arr1 = "a,b,c".Split(',');
