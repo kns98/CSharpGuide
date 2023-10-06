@@ -1,4 +1,6 @@
-Send me an email to get started.
+If you need help learning c#, send me an email to get started. We can use some of these examples, or learn something new. Thanks!
+
+kns98@yahoo.com
 
 🎓🌟 **Welcome to the Ultimate CSharp Learning Library!** 🌟🎓
 
